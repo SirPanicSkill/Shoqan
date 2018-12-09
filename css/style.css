@@ -239,10 +239,11 @@ footer > .container-fluid {
 @media (max-width: 770px) {
   body {
     background-image: url(../images/backgorund768.png);
-    background-size: 100vh;
+    background-size: 150%;
   }
 }
 @media (max-width: 576px) {
+
   header {
     height: 96px;
   }
@@ -268,7 +269,7 @@ footer > .container-fluid {
 
   body {
     background-image: url(../images/backgorund320.png);
-    background-size: cover;
+    background-size: 150%;
   }
   main {
     min-height: calc(100vh - 216px);
