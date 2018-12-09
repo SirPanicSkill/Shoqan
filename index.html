@@ -76,24 +76,39 @@
       <main>
         <div class="container-fluid">
             <div class="row no-gutters">
-              <div class="col-12 col-md-6">
+              <div class="col-12 col-md-7">
                 <span class="sq__lead white MSC-900">Эксклюзивные</br>мужские</br>костюмы</br>от 9 900 Р</span>
                 <div class="sq__sale-1 MSC-500 white" style="margin: 50px 0 0 0;">Запишись на примерку</br>через сайт и ты получишь:</div>
                 <div class="container-fluid" style="margin: 30px 0 0 -15px;">
                   <div class="row">
-                    <div class="col-12 col-md-6"><img src="images/sale.png" alt="sale">
+                    <div class="col-12 col-md-6" style="margin-bottom: 35px;"><img src="images/sale.png" alt="sale">
                       </br>
                       <span class="sq__sale-2 MSC-500 white">Скидку <span class="MSC-900">до 30%</span></br>на весь ассортимент</span>
                     </div>
-                    <div class="col-12 col-md-6"><img src="images/suit.png" alt="suit">
+                    <div class="col-12 col-md-6" style="margin-bottom: 35px;"><img src="images/suit.png" alt="suit">
                       </br>
                       <span class="sq__sale-2 MSC-500 white">Подгонку костюма</br>в подарок</span>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="col-12 col-md-6">
-                
+              <div class="col-12 col-md-5">
+                <div class="sq__form">
+                  <div class="sq__form__title MSC-100 white">Записаться на примерку</div>
+                  <input type="text" id="m1" class="wheat MSC-300" placeholder="Ваше имя">
+                  <input type="tel" id="m2" class="wheat MSC-300" placeholder="Телефон">
+                  <input type="email" id="m3" class="wheat MSC-300" placeholder="E-mail">
+                  <div class="conteiner-fluid">
+                    <div class="row">
+                      <div class="col-12 col-md-12 col-sm-6">
+                          <a class="sq__form__send MSC-100 wheat" href="javascript:sendmail($('#m1').val(),$('#m2').val(),$('#m3').val(),$('#m4').val(),$('#m5').val(),$('#m6').prop('checked'))">записаться</a>
+                      </div>
+                      <div class="col-12 col-md-12 col-sm-6">
+                          <div class="sq__form__politika white MSC-100">Нажимая на кнопку «Отправить», я даю согласие на обработку персональных данных, согласен на получение информационных рассылок о товарах и соглашаюсь <a href="Политика конфеденциальности.doc" class="wheat">с политикой конфиденциальности.</a></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
         </div>
@@ -121,5 +136,17 @@
       <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
       <script type="text/javascript" src="js/bootstrap.min.js"></script>
       <script type="text/javascript" src="js/script.js"></script>
+      <script type="text/javascript" src="js/smtp.js"></script>
+      <script type="text/javascript">
+        function sendmail(nameuser, phone, email) {
+          if ((nameuser=="") || (phone=="") || (email=="")) {
+            alert("Заполните все поля!");
+          } else {
+            var emailbody = ('Оставил заявку '+nameuser+', телефон для связи '+phone+', обратный электронный адрес '+email+'');
+            Email.send("smtp.yandex.ru","mailto:Moscow@shoqan.com","This is the mail from shoqansuits.ru",emailbody,"smtp.yandex.ru","smtp.yandex.ru","Fktrcway2007");
+            alert("Ваше заявка отправлена.");
+          }
+          }
+      </script>
     </body>
   </html>

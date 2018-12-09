@@ -159,7 +159,7 @@ main img {
 }
 /*info*/
 .sq__lead {
-  font-size: 79px;
+  font-size: 72px;
   line-height: 87px;
 }
 .sq__sale-1 {
@@ -167,6 +167,59 @@ main img {
 }
 .sq__sale-2 {
   font-size: 23px;
+}
+/*form*/
+.sq__form {
+  border-width: 20px;
+  border-color: rgba(228, 173, 106, .7);
+  border-style: solid;
+  background-color: rgba(0, 0, 0, .7);
+  box-shadow: 0px 6px 19.53px 1.47px rgba(10, 9, 9, 0.57);
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+}
+.sq__form input {
+  margin-bottom: 30px;
+  transition: all .15s ease-in-out;
+  border: 1px solid #ffffff;
+  background-color: transparent;
+  font-size: 12.5px;
+  padding: 20px;
+}
+.sq__form input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #c29769;
+  opacity: 1; /* Firefox */
+}
+
+.sq__form input:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #c29769;
+}
+
+.sq__form input::-ms-input-placeholder { /* Microsoft Edge */
+  color: #c29769;
+}
+.sq__form__title {
+  font-size: 43px;
+  text-align: center;
+  line-height: 52px;
+  margin-bottom: 30px;
+}
+.sq__form__send {
+  font-size: 37px;
+  box-shadow: 0px 0px 20px 4px rgba(239, 181, 112, 0.4);
+  display: block;
+  text-align: center;
+  border: 1px solid #d2a473;
+  border-radius: 5px;
+  margin-bottom: 30px;
+  background: rgb(226,226,226);
+  background: -moz-linear-gradient(top, transparent 0%, rgba(227,172,106,.5) 100%);
+  background: -webkit-linear-gradient(top, transparent 0%,rgba(227,172,106,.5) 100%);
+  background: linear-gradient(to bottom, transparent 0%,rgba(227,172,106,.5) 100%);
+}
+.sq__form__politika {
+  font-size: 12.5px;
 }
 
 /***** footer *****/
@@ -186,7 +239,7 @@ footer > .container-fluid {
 @media (max-width: 770px) {
   body {
     background-image: url(../images/backgorund768.png);
-    background-size: cover;
+    background-size: 100vh;
   }
 }
 @media (max-width: 576px) {
@@ -201,6 +254,7 @@ footer > .container-fluid {
   /*info*/
   .sq__inst {
     background-image: url(../images/inst-2.png);
+    background-size: auto;
   }
   .sq__phone {
     displaY: none;
@@ -227,6 +281,16 @@ footer > .container-fluid {
   }
   .sq__sale-1 {
     font-size: 24px;
+  }
+  /*form*/
+  .sq__form__title {
+    font-size: 35px;
+  }
+  .sq__form__send {
+    font-size: 24px;
+  }
+  .sq__form__politika {
+    font-size: 12px;
   }
 
   footer {
