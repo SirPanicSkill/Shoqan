@@ -1,57 +1,59 @@
 @font-face {
-    font-family: "Roboto";
-    src:
-      local("Roboto Regular"),
-      url("../fonts/roboto/Roboto-Regular.woff") format("woff");
-  }
-  @font-face {
-    font-family: "Segoe UI Light";
-    src:
-      local("Segoe UI Light"),
-      url("../fonts/Segoe UI Light/Segoe UI Light.ttf") format("truetype");
-    font-style: normal;
-    font-weight: normal;
-  }
-  @font-face {
-    font-family: "Georgia";
-    src:
-      local("Georgia"),
-      url("../fonts/Georgia/georgia.ttf") format("truetype");
-    font-style: normal;
-    font-weight: normal;
-  }
-  @font-face {
-    font-family: 'Material Icons';
-    font-style: normal;
-    font-weight: 400;
-    src: url("../fonts/Material/MaterialIcons-Regular.eot"); /* For IE6-8 */
-    src: local('Material Icons'),
-      local('MaterialIcons-Regular'),
-      url("../fonts/Material/MaterialIcons-Regular.woff2") format('woff2'),
-      url("../fonts/Material/MaterialIcons-Regular.woff") format('woff'),
-      url("../fonts/Material/MaterialIcons-Regular.ttf") format('truetype');
-  }
-  .material-icons {
-    font-family: 'Material Icons';
-    font-weight: normal;
-    font-style: normal;
-    font-size: 24px;  /* Preferred icon size */
-    display: inline-block;
-    line-height: 1;
-    text-transform: none;
-    letter-spacing: normal;
-    word-wrap: normal;
-    white-space: nowrap;
-    direction: ltr;
-  
-    /* Support for all WebKit browsers. */
-    -webkit-font-smoothing: antialiased;
-    /* Support for Safari and Chrome. */
-    text-rendering: optimizeLegibility;
-  
-    /* Support for Firefox. */
-    -moz-osx-font-smoothing: grayscale;
-  
-    /* Support for IE. */
-    font-feature-settings: 'liga';
-  }
+  font-family: 'Museo Sans Cyrillic 900';
+  src: url('../fonts/MuseoSansCyrillic-900.eot');
+  src: url('../fonts/MuseoSansCyrillic-900.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/MuseoSansCyrillic-900.woff2') format('woff2'),
+      url('../fonts/MuseoSansCyrillic-900.woff') format('woff'),
+      url('../fonts/MuseoSansCyrillic-900.ttf') format('truetype'),
+      url('../fonts/MuseoSansCyrillic-900.otf') format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Museo Sans Cyrillic 700';
+  src: url('../fonts/MuseoSansCyrillic-700.eot');
+  src: url('../fonts/MuseoSansCyrillic-700.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/MuseoSansCyrillic-700.woff2') format('woff2'),
+      url('../fonts/MuseoSansCyrillic-700.woff') format('woff'),
+      url('../fonts/MuseoSansCyrillic-700.ttf') format('truetype'),
+      url('../fonts/MuseoSansCyrillic-700.otf') format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Museo Sans Cyrillic 500';
+  src: url('../fonts/MuseoSansCyrillic-500.eot');
+  src: url('../fonts/MuseoSansCyrillic-500.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/MuseoSansCyrillic-500.woff2') format('woff2'),
+      url('../fonts/MuseoSansCyrillic-500.woff') format('woff'),
+      url('../fonts/MuseoSansCyrillic-500.ttf') format('truetype'),
+      url('../fonts/MuseoSansCyrillic-500.otf') format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Museo Sans Cyrillic 300';
+  src: url('../fonts/MuseoSansCyrillic-300.eot');
+  src: url('../fonts/MuseoSansCyrillic-300.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/MuseoSansCyrillic-300.woff2') format('woff2'),
+      url('../fonts/MuseoSansCyrillic-300.woff') format('woff'),
+      url('../fonts/MuseoSansCyrillic-300.ttf') format('truetype'),
+      url('../fonts/MuseoSansCyrillic-300.otf') format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Museo Sans Cyrillic 100';
+  src: url('../fonts/MuseoSansCyrillic-100.eot');
+  src: url('../fonts/MuseoSansCyrillic-100.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/MuseoSansCyrillic-100.woff2') format('woff2'),
+      url('../fonts/MuseoSansCyrillic-100.woff') format('woff'),
+      url('../fonts/MuseoSansCyrillic-100.ttf') format('truetype'),
+      url('../fonts/MuseoSansCyrillic-100.otf') format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
