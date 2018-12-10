@@ -97,6 +97,7 @@ body {
   background-position: 50% 0;
   background-size: cover;
   font-family: 'Museo Sans Cyrillic 300';
+  background-attachment: fixed;
 }
 /***** header *****/
 header {
@@ -161,6 +162,7 @@ main img {
 .sq__lead {
   font-size: 72px;
   line-height: 87px;
+  word-break: break-all;
 }
 .sq__sale-1 {
   font-size: 30px;
@@ -221,6 +223,11 @@ main img {
 .sq__form__politika {
   font-size: 12.5px;
 }
+/*amocrm*/
+iframe.amoforms_iframe {
+  position: relative !important;
+  min-height: 730px !important;
+}
 
 /***** footer *****/
 footer {
@@ -236,11 +243,6 @@ footer > .container-fluid {
 /**************************************
               MEDIA
 ***************************************/
-@media all and (orientation: landscape) { 
-  body {
-    background-size: 200%;
-  }
-}
 @media (max-width: 770px) {
   body {
     background-image: url(../images/backgorund768.png);
