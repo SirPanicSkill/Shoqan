@@ -227,6 +227,7 @@ main img {
 iframe.amoforms_iframe {
   position: relative !important;
   min-height: 650px !important;
+  height: 100% !important;
 }
 
 /***** footer *****/
