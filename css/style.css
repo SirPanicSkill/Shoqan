@@ -226,7 +226,7 @@ main img {
 /*amocrm*/
 iframe.amoforms_iframe {
   position: relative !important;
-  min-height: 730px !important;
+  min-height: 650px !important;
 }
 
 /***** footer *****/
